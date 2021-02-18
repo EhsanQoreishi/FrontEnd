@@ -1,0 +1,409 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*MY_CODE*/
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.93);
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+header nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li a {
+  display: inline-block;
+  margin: -40px 0px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #111;
+  padding: 35px 30px;
+}
+
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.93);
+  margin: 32px 0;
+  padding: 0 20px;
+  border-radius: 0px 0px 6px 6px;
+}
+
+header nav ul li:hover ul {
+  display: block;
+}
+
+header nav ul li ul li {
+  width: 140px;
+}
+
+header nav ul li ul li a {
+  display: block !important;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+header nav ul li ul li a:hover {
+  background-color: #f4f4f4;
+}
+
+header .header-cases {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    margin: 40px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 20px;
+    border-right: 2px solid #111;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 52px 10px;
+    float: left;
+  }
+
+  header .header-brand {
+    font-size: 22px;
+  }
+
+  header .header-cases {
+    display: block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: #111;
+    text-transform: uppercase;
+    border: 1px solid #111;
+    float: right;
+    margin: 38px 30px;
+    padding: 10px 15px;
+  }
+}
+
+/*INDEX*/
+.index-banner {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-image: url('imgs/banner.jpg');
+  background-repeat: no-no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.index-banner h2 {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links div {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  background-color: #f2f2f2;
+}
+
+.index-links div h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 100px;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 900px;
+    margin: 10px auto;
+  }
+
+  .index-banner {
+    height: 450px;
+  }
+
+  .index-banner h2 {
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 10px 10px 10px;
+    height: 205px;
+    float: left;
+  }
+
+  .index-boxlink-square {
+    width: calc(25% - 20px) !important;
+  }
+
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 205px;
+  }
+}
+
+/*GALLERY*/
+.gallery-links-h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 100;
+  color: #111;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.gallery-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery-img {
+  flex-basis: 90%;
+  margin: 10px;
+}
+
+.gallery-img img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .gallery-links-h2 {
+    font-size: 28px;
+  }
+
+  .gallery-img {
+    flex-basis: 200px;
+  }
+}
+
+/*FOOTER*/
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.footer-links-cases {
+  display: none;
+}
+
+footer ul {
+  width: fit-contact;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.footer-SM {
+  width: 30px;
+  float: right;
+}
+
+.footer-SM img {
+  width: 100%;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  footer ul {
+    width: fit-contact;
+    float: left;
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+
+  footer ul li p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}

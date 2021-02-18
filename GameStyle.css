@@ -1,0 +1,498 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*MY_CODE*/
+* {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+body {
+  background-image: url(imgs/472768.JPG);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .btn-toggle {
+  width: 60px;
+  height: 100px;
+  background-image: url("imgs/menu.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  cursor: pointer;
+  float: left;
+}
+
+header .btn-toggle:hover {
+  opacity: 0.5;
+}
+
+header .header-brand {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #e7e6e1;
+  display: block;
+  text-align: center;
+  margin: 40px auto;
+}
+
+header .nav-sidebar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 0px;
+  height: calc(100vh - 100px);
+  background-color: #1b1b1b;
+  transition: 0.5s;
+}
+
+header .nav-sidebar ul {
+  padding-top: 5px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+header .nav-sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+}
+
+header .nav-sidebar ul li span, header .nav-sidebar ul li a {
+  display: block;
+  height: 60px;
+  padding: 0 20px;
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+header .nav-sidebar ul li span {
+  font-family: 'Gloria Hallelujah', cursive !important;
+}
+
+header .nav-sidebar ul li a:hover {
+  border-color: #222;
+}
+
+@media only screen and (min-width: 1000px) {
+  header .header-brand {
+    font-size: 30px;
+  }
+}
+
+/*INDEX*/
+.index-banner {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.index-banner video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    width: 900px;
+    margin: 10px auto;
+  }
+
+  .index-banner {
+    width: calc(100% - 400px);
+    margin: 20px auto;
+  }
+}
+
+/*GAME PART*/
+.task {
+  display: block;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(15, 11, 7, 0.7);
+}
+
+.task p {
+  color: #e7e6e1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.task h2 {
+  color: yellow;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.interface a {
+  display: block;
+  width: calc(100% - 10px);
+  padding: 10px;
+}
+
+.interface a:hover {
+  background-color: rgba(15, 11, 7, 0.6);
+}
+
+.interface a img {
+  width: 160px;
+  height: 130px;
+  position: relative;
+  float: left;
+}
+
+.interface a div {
+  margin-top: 5px;
+  margin-left: 165px;
+}
+
+.interface a div h3 {
+  color: yellow;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.interface a div p {
+  color: #e7e6e1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  margin: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 540px) {
+  .interface a {
+    display: inline-block;
+    width: 400px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .interface a {
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .interface a {
+    margin-left: 170px;
+  }
+}
+
+/*Attack*/
+.img-battel {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.task-attack {
+  color: red;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.hero {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: auto;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  position: block;
+  margin: 20px 0;
+  float: left;
+}
+
+.hero div {
+  margin-top: 25px;
+  margin-left: 205px;
+}
+
+.hero div h3 {
+  color: yellow;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.hero div p {
+  color: #e7e6e1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  margin: 15px;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+.actions {
+  visibility: hidden;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 0, 0, 0.7);
+  margin: 60px auto;
+}
+
+.actions a {
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 18px;
+  color: #e7e6e1;
+  padding: 15px 60px;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 540px) {
+  .actions {
+    width: 400px;
+  }
+}
+
+.enemy {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: -30px;
+}
+
+.enemy img {
+  width: 200px;
+  height: 200px;
+  position: block;
+  float: left;
+}
+
+.enemy div {
+  margin-top: 10px;
+  margin-left: 205px;
+}
+
+.enemy div h3 {
+  color: yellow;
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+.enemy div p {
+  color: #e7e6e1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  margin: 15px;
+  line-height: 10px;
+  white-space: nowrap;
+}
+
+/*FOOTER*/
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+.footer-links-cases {
+  display: none;
+}
+
+footer ul {
+  width: fit-contact;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.footer-SM {
+  width: 30px;
+  float: right;
+}
+
+.footer-SM img {
+  width: 100%;
+  margin-bottom: 30px;
+  filter: grayscale(100%);
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  footer ul {
+    width: fit-contact;
+    float: left;
+    padding-left: 20px;
+    padding-right: 80px;
+  }
+
+  footer ul li p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
