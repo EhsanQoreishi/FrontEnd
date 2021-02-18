@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My First Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans+Condensed:wght@300;700&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="GameStyle.css">
+  <script src="js/gamemanager.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/enemy.js"></script>
+  <script src="js/rolls.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="btn-toggle" onclick="toggleNav()"></div>
+    <p class="header-brand">GAME</p>
+
+    <aside class="nav-sidebar">
+      <ul>
+        <li><span>EHSAN</span></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Cases</a></li>
+      </ul>
+    </aside>
+
+  </header>
+
+  <main>
+    <section class="index-banner">
+      <video autoplay>
+        <source src="video/Game.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+  </main>
+
+  <div class="task">
+    <p>Play the greatset RPG ever to be made!</p>
+    <h2>Choose your character</h2>
+  </div>
+
+  <div class="interface">
+    <a href="#" onclick="GameManager.setGameStart('Warrior')">
+      <img src="imgs/player/warrior.jpg" alt="warrior">
+      <div>
+        <h3>Warrior</h3>
+        <p>Warriors have higher health and stamina, however their strength also makes them slower and clumsier.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Rogue')">
+      <img src="imgs/player/rogue.jpg" alt="rogue">
+      <div>
+        <h3>Rogue</h3>
+        <p>Rogue are fast and have high stamina and speed wich makes up for their lack in strength and health.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Mage')">
+      <img src="imgs/player/mage.jpg" alt="mage">
+      <div>
+        <h3>Mage</h3>
+        <p>Mage are glass canons which puts all their effort into spells. This means they slack on everything else.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Hunter')">
+      <img src="imgs/player/hunter.jpg" alt="hunter">
+      <div>
+        <h3>Hunter</h3>
+        <p>Hunters are well rounded fighters that focus on evening out their skills. No strengths or weaknesses.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="actions">
+
+  </div>
+
+  <div class="arena">
+
+  </div>
+
+  <div class="enemy">
+
+  </div>
+
+
+  <div class="wrapper">
+    <footer>
+
+      <ul class="footer-links-main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Game.html">Game</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Countact</a></li>
+      </ul>
+      <ul class="footer-links-cases">
+        <li>
+          <p>Lastet Cases</p>
+        </li>
+        <li><a href="#">Monte Carlo - How to integrate</a></li>
+        <li><a href="#">Neural Network - How to predict</a></li>
+        <li><a href="#">Cryptogeraohy - How to hide</a></li>
+        <li><a href="#">Route</a></li>
+      </ul>
+      <div class="footer-SM">
+        <a href="#">
+          <img src="imgs/twitter.png" alt="twitter icon">
+        </a>
+        <a href="#">
+          <img src="imgs/facebook.png" alt="facebook icon">
+        </a>
+        <a href="#">
+          <img src="imgs/youtube.png" alt="YouTube icon">
+        </a>
+      </div>
+
+    </footer>
+  </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
